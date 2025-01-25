@@ -1,6 +1,9 @@
 /* MARK: Base styles */
 :root {
   font-size: 62.5%;
+
+  --white: hsl(0, 0%, 100%);
+  --black-overlay: hsla(0, 0%, 0%, 0.5);
 }
 
 *,
@@ -25,4 +28,47 @@ body {
 .container {
   width: min(calc(100% - 4rem), 72rem);
   margin-inline: auto;
+}
+
+/* MARK: Header */
+.header {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 2rem;
+  color: var(--white);
+  background: linear-gradient(var(--black-overlay), var(--black-overlay)),
+    url('images/header-bg.jpg') center/cover no-repeat;
+  min-height: 20rem;
+}
+
+/* MARK: Logo */
+.logo {
+  font-weight: 600;
+  box-shadow: inset 0 0.3rem 0 0 var(--white), inset 0 -0.3rem 0 0 var(--white);
+  line-height: 2;
+}
+
+/* MARK: Navigation */
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navigation__button {
+  font: inherit;
+  font-weight: 600;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  padding: 0.6rem;
+  transition: box-shadow 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.navigation__button:hover,
+.navigation__button--active {
+  box-shadow: inset 0 -0.3rem 0 0 var(--white);
+  cursor: pointer;
 }
