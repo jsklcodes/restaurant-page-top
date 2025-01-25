@@ -4,6 +4,7 @@
 
   --white: hsl(0, 0%, 100%);
   --black-overlay: hsla(0, 0%, 0%, 0.5);
+  --licorice: hsl(23, 51%, 8%);
 }
 
 *,
@@ -23,6 +24,12 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   min-block-size: 100vh;
+  color: var(--licorice);
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .container {
@@ -71,4 +78,29 @@ body {
 .navigation__button--active {
   box-shadow: inset 0 -0.3rem 0 0 var(--white);
   cursor: pointer;
+}
+
+/* MARK: Content */
+.content {
+  padding-block: 4rem;
+}
+
+/* MARK: Welcome */
+.welcome {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 2rem;
+}
+
+.welcome__title {
+  font-weight: 800;
+  font-size: clamp(2.4rem, 2.5vw, 3.2rem);
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+}
+
+.welcome__description {
+  font-size: 1.8rem;
+  opacity: 0.9;
 }
