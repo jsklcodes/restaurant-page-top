@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-  width: min(calc(100% - 4rem), 72rem);
+  width: min(calc(100% - 4rem), 80rem);
   margin-inline: auto;
 }
 
