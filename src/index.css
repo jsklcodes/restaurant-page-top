@@ -125,3 +125,34 @@ img {
 .menu__list {
   list-style: none;
 }
+
+/* MARK: Contact */
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+
+.contact__title {
+  font-weight: 800;
+  font-size: clamp(2.4rem, 2.5vw, 3.2rem);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.contact__description {
+  margin-bottom: 1.6rem;
+}
+
+.contact__details {
+  display: grid;
+  gap: 2rem;
+}
+
+.contact__hours-list {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+  margin-bottom: 1.6rem;
+}
