@@ -91,6 +91,7 @@ img {
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   gap: 2rem;
+  padding-top: 6rem;
 }
 
 .welcome__title {
