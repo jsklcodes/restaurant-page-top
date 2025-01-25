@@ -12,11 +12,14 @@
 }
 
 body {
+  display: grid;
+  grid-template-rows: auto 1fr;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
     helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
     sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
+  min-block-size: 100vh;
 }
 
 .container {
